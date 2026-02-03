@@ -8,7 +8,7 @@ Este repositório contém:
 - *Client.Votacao* (Console App .NET) — testa `GetCandidates`, `Vote`
 - *Client.Apuramento* (Console App .NET) — testa `GetResults`
 
-- Conforme o enunciado da Atividade II, os serviços gRPC são executados a partir do repositório VotingSystem.
+- Conforme o enunciado da Tarefa 7 - Atividade III, os serviços gRPC são executados a partir do repositório VotingSystem.
 Este repositório contém apenas os *clientes* e os ficheiros *.proto* necessários.
 
 ---
@@ -20,6 +20,7 @@ Este repositório contém apenas os *clientes* e os ficheiros *.proto* necessár
 | |- voting.proto
 |- Client.Registro
 |- Client.Votacao
+|- Client.Apuramento
 
 # Tecnologias Utilizadas
 - ASP.NET Core gRPC
@@ -64,7 +65,7 @@ grpcurl -plaintext -import-path ".\Protos" -proto "voter.proto" -d "{ \"citizen_
 ```cmd
 grpcurl -plaintext -import-path ".\Protos" -proto "voting.proto" -d "{ \"voting_credential\": \"CRED-GHI-789\", \"candidate_id\": 1 }" localhost:9091 voting.VotingService/Vote```
 
-4. GetResults (AV – 9091)
+4. GetResults (AA – 9091)
 ```cmd
 grpcurl -plaintext -import-path ".\Protos" -proto "voting.proto" localhost:9091 voting.VotingService/GetResults```
 
