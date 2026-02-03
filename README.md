@@ -88,6 +88,10 @@ set GRPC_SERVER=http://localhost:9091
 dotnet run
 ```
 
+# Testes da UI
+
+- Executar: VotingClient.GUI.csproj no VISUAL STUDIO 2026
+
 
 Os clientes ligam-se aos endpoints locais:
 
